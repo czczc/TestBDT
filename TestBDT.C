@@ -27,13 +27,13 @@ TMVA::Factory *factory = 0;
 TMVA::DataLoader *dataloader = 0;
 
 
-void Run();
+void TestBDT();
 void InitInput();
 void InitOutput();
 void InitBDT();
 void TestEvaluate();
 
-void Run()
+void TestBDT()
 {
     TMVA::Tools::Instance();
     InitInput();
@@ -165,7 +165,7 @@ int main( int argc, char** argv )
 {
 
     cout << "testing BDT in ROOT TMVA" << endl;
-    Run();
+    TestBDT();
     return 1;
 
 }
