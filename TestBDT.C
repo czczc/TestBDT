@@ -116,6 +116,29 @@ void InitBDT()
         "BaggedSampleFraction=0.5:"
         "SeparationType=GiniIndex:"
         "nCuts=20");
+    
+    // // Fisher (linear discriminant)
+    // factory->BookMethod(dataloader, TMVA::Types::kFisher, "Fisher", 
+    //     "H:!V:Fisher:"
+    //     "VarTransform=None:"
+    //     "CreateMVAPdfs:"
+    //     "PDFInterpolMVAPdf=Spline2:"
+    //     "NbinsMVAPdf=50:"
+    //     "NsmoothMVAPdf=10");
+
+    // // Multi-layer Perceptron (ANN)
+    // factory->BookMethod(dataloader, TMVA::Types::kMLP, "MLP", 
+    //     "H:!V:"
+    //     "NeuronType=tanh:"
+    //     "VarTransform=N:"
+    //     "NCycles=600:"
+    //     "HiddenLayers=N+5:"
+    //     "TestRate=5:"
+    //     "!UseRegulator" );
+    
+    // // Support Vector Machine (SVM)
+    // factory->BookMethod(dataloader, TMVA::Types::kSVM, "SVM", 
+    //     "Gamma=0.25:Tol=0.001:VarTransform=Norm");
 
 }
 
